@@ -1,1 +1,3 @@
-<span>hello world</span>
+<div [ngStyle]="{ backgroundColor: isDarkMode ? 'black' : 'white' }">
+  <button (click)="onThemeClick()">{{ isDarkMode ? "dark" : "light" }}</button>
+</div>
